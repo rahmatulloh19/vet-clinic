@@ -1,6 +1,7 @@
 :root {
   --main-content-color: #333;
   --secondary-content-color: #ffbd54;
+  --main-text-color: #949494;
 }
 
 @font-face {
@@ -297,7 +298,7 @@ img {
   list-style: none;
 }
 
-.navigation__list::before {
+/* .navigation__list::before {
   display: inline-block;
   width: 21px;
   height: 22px;
@@ -306,7 +307,7 @@ img {
           transform: translate(-12px, 1px);
   background-image: url("../images/fish.svg");
   content: "";
-}
+} */
 
 .navigation__item {
   padding: 20px 0 16px 0;
@@ -334,6 +335,17 @@ img {
   color: inherit;
 }
 
+.navigation__link--decoration::before {
+  display: inline-block;
+  width: 21px;
+  height: 16px;
+  -webkit-transform: translate(-12px, 1px);
+      -ms-transform: translate(-12px, 1px);
+          transform: translate(-12px, 1px);
+  background-image: url("../images/fish.svg");
+  content: "";
+}
+
 .end__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -344,7 +356,9 @@ img {
   text-decoration: none;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+  -o-transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .end__link:hover {
@@ -369,8 +383,187 @@ img {
 /* Header end styles finished */
 /* Site header styles end */
 
+/* Main styles begin */
+/* Hero section styles started */
 
-/* Site footer begin */
+.hero {
+  padding-top: 118px;
+  padding-bottom: 131px;
+  background-image: url("../images/docdog.png");
+  background-repeat: no-repeat;
+  background-position-x: calc(50% + 520px);
+  background-position-y: 13px;
+}
+
+.hero__wrapper {
+  max-width: 656px;
+  width: 100%;
+  margin-left: 110px;
+}
+
+.hero__text {
+  max-width: 447px;
+  width: 100%;
+  margin-bottom: 117px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 58px;
+}
+
+.hero__desc {
+  margin: 0;
+  line-height: 20px;
+  color: var(--main-text-color);
+}
+
+.hero__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-width: 656px;
+  width: 100%;
+  font-style: normal;
+}
+
+.hero__direction {
+  max-width: 153px;
+  width: 100%;
+}
+
+.hero__direction::before {
+  display: block;
+  width: 73px;
+  height: 74px;
+  margin-bottom: 30px;
+  background-image: url("../images/location.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.hero__direction-link {
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+  -o-transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.hero__direction-link:hover {
+  color: var(--secondary-content-color);
+}
+
+.hero__direction-link:active {
+  color: var(--main-content-color);
+  opacity: 0.6;
+}
+
+.workdate {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.workdate::before {
+  display: block;
+  width: 77px;
+  height: 72px;
+  margin-bottom: 27px;
+  background-image: url("../images/herocalendar.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.workdate__time {
+  font-weight: 500;
+}
+
+.workdate__item:first-child {
+  margin-bottom: 12px;
+}
+
+.hero__tel {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.hero__tel::before {
+  display: block;
+  width: 46px;
+  height: 73px;
+  margin-bottom: 27px;
+  background-image: url("../images/phone.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.hero__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.hero__item-link {
+  display: inline-block;
+  font-weight: 500;
+  line-height: 21px;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+  -o-transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.hero__item-link:hover {
+  color: var(--secondary-content-color);
+}
+
+.hero__item-link:active {
+  color: var(--main-content-color);
+  opacity: 0.6;
+}
+/* Hero section styles finished */
+
+/* Finde-me section styles started */
+
+.find-me {
+  padding-top: 386px;
+  padding-bottom: 206px;
+  background-size: 1536px;
+  background-image: url("../images/dog.png");
+  background-position-x: calc(50%);
+  background-position-y: -95px;
+  background-repeat: no-repeat;
+}
+
+.find-me__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.find-me__iframe {
+  width: calc(100% - 593px);
+}
+
+/* Find-me section styles finished */
+/* Main styles end */
+
+/* Site footer styles begin */
 
 .site-footer {
   padding-top: 62px;
@@ -552,4 +745,26 @@ img {
   text-align: right;
   color: #949494;
 }
-/* Site footer end */
+/* Site footer styles end */
+
+/* Retina images */
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                -webkit-min-device-pixel-ratio: 2),
+only screen and (                -o-min-device-pixel-ratio: 2/1),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  /* Retina-specific stuff here */
+
+  .hero {
+    background-image: url("../images/docdog@2x.png");
+  }
+
+  .find-me {
+    background-image: url("../images/dog@2x.png");
+  }
+} 

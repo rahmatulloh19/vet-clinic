@@ -344,7 +344,9 @@ img {
   text-decoration: none;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
-  transition: opacity 0.3s ease;
+  -webkit-transition: color 0.3s ease, opacity 0.3s ease;
+  -o-transition: color 0.3s ease, opacity 0.3s ease;
+  transition: color 0.3s ease, opacity 0.3s ease;
 }
 
 .end__link:hover {
@@ -1156,7 +1158,7 @@ img {
 /* Section contact finished */
 /* Site main styles end */
 
-/* Site footer begin */
+/* Site footer styles begin */
 
 .site-footer {
   padding-top: 62px;
@@ -1338,4 +1340,4 @@ img {
   text-align: right;
   color: #949494;
 }
-/* Site footer end */
+/* Site footer styles end */
