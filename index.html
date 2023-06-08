@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="./css/main.css"> -->
-  <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
   <title>Vet Clinic</title>
 </head>
 <body>
@@ -176,7 +176,7 @@
     <!-- Section services finished -->
     <!-- Site article begin -->
     <article class="site-article">
-      <div class="container">
+      <div class="site-article__inner">
         <h2 class="site-article__title" title="Stay up to date">Будь в курсе событий</h2>
         <form class="site-article__form" action="https://echo.htmlacademy.ru/courses" method="POST" autocomplete="off">
           <input class="site-article__input" type="email" name="user_email" placeholder="Укажите Ваш email адрес" aria-label="Укажите Ваш email адрес" required>
@@ -246,18 +246,20 @@
     </section>
     <!-- Section useful finished -->
     <section class="site-main__contact contact">
-      <iframe class="contact__iframe" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2715.5647351964153!2d37.63987207616381!3d47.10760297114835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDA2JzI3LjQiTiAzN8KwMzgnMzIuOCJF!5e0!3m2!1suz!2s!4v1685975564893!5m2!1suz!2s"></iframe>
-      <div class="contact__content">
-        <div class="contact__text">
-          <h2 class="contact__title" title="Feedback">Обратная связь</h2>
-          <p class="contact__desc">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
-          <form class="contact__form" action="https://echo.htmlacademy.ru/courses" method="POST" autocomplete="off">
-            <input class="contact__input" type="text" name="user_name" aria-label="Введите ваше имя" placeholder="Ваше имя" minlength="2" maxlength="50" required>
-            <input class="contact__input" type="email" name="user_email" aria-label="Введите Email для обратной связи" placeholder="Email для обратной связи" required>
-            <textarea class="contact__area" name="user_oponion" placeholder="Опишите Ваш вопрос." aria-label="Оставьте свой отзыв"></textarea>
-            <button class="contact__btn" type="submit">Задать нам вопрос</button>
-          </form>
-        </div>  
+      <div class="contact__inner">
+        <iframe class="contact__iframe" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2715.5647351964153!2d37.63987207616381!3d47.10760297114835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDfCsDA2JzI3LjQiTiAzN8KwMzgnMzIuOCJF!5e0!3m2!1suz!2s!4v1685975564893!5m2!1suz!2s"></iframe>
+        <div class="contact__content">
+          <div class="contact__text">
+            <h2 class="contact__title" title="Feedback">Обратная связь</h2>
+            <p class="contact__desc">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+            <form class="contact__form" action="https://echo.htmlacademy.ru/courses" method="POST" autocomplete="off">
+              <input class="contact__input" type="text" name="user_name" aria-label="Введите ваше имя" placeholder="Ваше имя" minlength="2" maxlength="50" required>
+              <input class="contact__input" type="email" name="user_email" aria-label="Введите Email для обратной связи" placeholder="Email для обратной связи" required>
+              <textarea class="contact__area" name="user_oponion" placeholder="Опишите Ваш вопрос." aria-label="Оставьте свой отзыв"></textarea>
+              <button class="contact__btn" type="submit">Задать нам вопрос</button>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
   </main>
