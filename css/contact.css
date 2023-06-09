@@ -298,17 +298,6 @@ img {
   list-style: none;
 }
 
-/* .navigation__list::before {
-  display: inline-block;
-  width: 21px;
-  height: 22px;
-  -webkit-transform: translate(-12px, 1px);
-      -ms-transform: translate(-12px, 1px);
-          transform: translate(-12px, 1px);
-  background-image: url("../images/fish.svg");
-  content: "";
-} */
-
 .navigation__item {
   padding: 20px 0 16px 0;
   border-bottom: 4px solid transparent;
@@ -389,7 +378,7 @@ img {
 .hero {
   padding-top: 118px;
   padding-bottom: 131px;
-  background-image: url("../images/docdog.png");
+  background-image: url("../images/contact/docdog.png");
   background-repeat: no-repeat;
   background-position-x: calc(50% + 520px);
   background-position-y: 13px;
@@ -446,7 +435,7 @@ img {
   width: 73px;
   height: 74px;
   margin-bottom: 30px;
-  background-image: url("../images/location.svg");
+  background-image: url("../images/contact/location.svg");
   background-repeat: no-repeat;
   content: "";
 }
@@ -481,7 +470,7 @@ img {
   width: 77px;
   height: 72px;
   margin-bottom: 27px;
-  background-image: url("../images/herocalendar.svg");
+  background-image: url("../images/contact/herocalendar.svg");
   background-repeat: no-repeat;
   content: "";
 }
@@ -505,7 +494,7 @@ img {
   width: 46px;
   height: 73px;
   margin-bottom: 27px;
-  background-image: url("../images/phone.svg");
+  background-image: url("../images/contact/phone.svg");
   background-repeat: no-repeat;
   content: "";
 }
@@ -538,13 +527,29 @@ img {
 /* Finde-me section styles started */
 
 .find-me {
+  position: relative;
   padding-top: 386px;
   padding-bottom: 206px;
-  background-size: 1536px;
-  background-image: url("../images/dog.png");
-  background-position-x: calc(50%);
-  background-position-y: -95px;
+  background-image: url("../images/contact/pet.svg"), url("../images/contact/searchicon.svg");
+  background-position-x: calc(50% + 200px), calc(50% + 65px);
+  background-position-y: 117px, 255px;
   background-repeat: no-repeat;
+}
+
+.find-me__title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.find-me__bg-image {
+  position: absolute;
+  top: 213px;
+  width: 443px;
+  height: 342px;
+  background-image: url("../images/contact/dog.png");
 }
 
 .find-me__wrapper {
@@ -655,7 +660,7 @@ img {
   display: inline-block;
   width: 14px;
   height: 15px;
-  background-image: url("../images/calendar.svg");
+  background-image: url("../images.contact/calendar.svg");
   -webkit-transform: translate(-7px, 2px);
       -ms-transform: translate(-7px, 2px);
           transform: translate(-7px, 2px);
@@ -761,10 +766,10 @@ only screen and (                min-resolution: 2dppx) {
   /* Retina-specific stuff here */
 
   .hero {
-    background-image: url("../images/docdog@2x.png");
+    background-image: url("./images/contact/docdog@2x.png");
   }
 
   .find-me {
-    background-image: url("../images/dog@2x.png");
+    background-image: url("./images/contact/dog@2x.png");
   }
 } 
