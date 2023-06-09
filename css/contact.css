@@ -547,6 +547,7 @@ img {
 .find-me__bg-image {
   position: absolute;
   top: 213px;
+  left: calc(50% - 765px);
   width: 443px;
   height: 342px;
   background-image: url("../images/contact/dog.png");
