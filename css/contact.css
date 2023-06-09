@@ -769,7 +769,7 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url("./images/contact/docdog@2x.png");
   }
 
-  .find-me {
-    background-image: url("./images/contact/dog@2x.png");
+  .find-me__bg-image {
+    background-image: url("../images/contact/dog@2x.png");
   }
 } 
