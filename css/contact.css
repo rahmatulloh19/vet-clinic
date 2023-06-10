@@ -343,8 +343,6 @@ img {
   line-height: 21px;
   color: inherit;
   text-decoration: none;
-  -webkit-transition: opacity 0.3s ease;
-  -o-transition: opacity 0.3s ease;
   -webkit-transition: color 0.3s ease, opacity 0.3s ease;
   -o-transition: color 0.3s ease, opacity 0.3s ease;
   transition: color 0.3s ease, opacity 0.3s ease;
@@ -765,11 +763,22 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
   
   /* Retina-specific stuff here */
-
   .hero {
-    background-image: url("./images/contact/docdog@2x.png");
+    background-image: url("../images/contact/docdog@2x.png");
   }
 
+
+} 
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                -webkit-min-device-pixel-ratio: 2),
+only screen and (                -o-min-device-pixel-ratio: 2/1),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
   .find-me__bg-image {
     background-image: url("../images/contact/dog@2x.png");
   }
