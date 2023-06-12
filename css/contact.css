@@ -584,6 +584,11 @@ img {
           justify-content: space-between;
 }
 
+.logo-footer {
+  -webkit-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
 .logo-footer:hover {
   opacity: 0.8;
 }
