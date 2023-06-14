@@ -88,87 +88,172 @@
   
   <!-- Site main begin -->
   <main class="site-main">
+    <div class="site-main__sub-inner">
+      <img class="site-main__picture" src="./images/single/herobg.png"
+      width="1600"
+      height="529"
+      srcset="./images/single/herobg.png 1x, ./images/single/herobg@2x.png 2x"
+      alt="The doctor to carried a white and yellow puppy">
+    </div>
     <!-- Section hero started -->
-    
     <section class="site-main__hero hero">
-      <div class="site-main__sub-inner">
-        <img class="site-main__picture" src="./images/single/herobg.png"
-        width="1600"
-        height="529"
-        srcset="./images/single/herobg.png 1x, ./images/single/herobg@2x.png 2x"
-        alt="The doctor to carried a white and yellow puppy">
-      </div>
       <div class="container">
-
+        <div class="hero__wrapper">
+          <div class="hero__inner">
+            <nav class="hero__nav">
+              <ul class="hero__nav-list">
+                <li class="hero__nav-item">
+                  <a class="hero__nav-link hero__nav-link--warning" href="./index.html">Главная</a>
+                </li>
+                <li class="hero__nav-item">
+                  <a class="hero__nav-link hero__nav-link--decoration hero__nav-link--warning" href="./services.html">Наши Услуги</a>
+                </li>
+                <li class="hero__nav-item">
+                  <a class="hero__nav-link hero__nav-link--active" href="./single.html">Первичный осмотр</a>
+                </li>
+              </ul>
+            </nav>
+            
+            <div class="hero__content">
+              <h1 class="hero__title">Первичный <span class="hero__tagline">осмотр</span></h1>
+              
+              <p class="hero__desc">
+                Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время. По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.
+              </p>
+              <p class="hero__desc">
+                По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас. По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.
+              </p>
+              <p class="hero__desc">
+                По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.
+              </p>
+              <p class="hero__desc">
+                Узнать информацию о наших услугах, записаться на прием к врачу или проконсультироваться вы можете по телефону, в любое удобное для вас время. По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.
+              </p>
+              <p class="hero__desc">
+                По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас. По условиям акции в нашей клинике предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность оставить у нас.
+              </p>
+              <a class="hero__more" href="#">Узнать цену</a>
+              <a class="hero__more hero__more--main" href="#">Записаться на приём</a>
+            </div>
+          </div>
+          <ul class="hero__list">
+            <li class="hero__item">
+              <img class="hero__thumb" src="./images/index/healing.png" 
+              width="305"
+              height="180"
+              alt="The doc inject to the bisque dog">
+              <div class="hero__list-content">
+                <time class="hero__date" datetime="2020-07-21">21.07.2020</time>
+                <div class="hero__text">
+                  <h3 class="hero__subtitle">Когда привавать питомца?</h3>
+                  <p class="hero__list-desc">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+                  <a href="#" class="hero__list-more">Читать больше</a>
+                </div>
+              </div>
+            </li>
+            <li class="hero__item">
+              <img class="hero__thumb" src="./images/index/graycat.png" 
+              width="305"
+              height="180"
+              alt="The gray cat opened his mouth">
+              <div class="hero__list-content">
+                <time class="hero__date" datetime="2023-08-28">28.08.2020</time>
+                <div class="hero__text">
+                  <h3 class="hero__subtitle">Ультразвуковая чистка зубов</h3>
+                  <p class="hero__list-desc">Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый зверек берется от ...</p>
+                  <a href="#" class="hero__list-more">Читать больше</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-
     <!-- Section hero finished -->
+    <!-- Section quest started -->
+    <section class="site-main__quest quest">
+      <div class="container">
+        <div class="quest__inner">
+          <div class="quest__text">
+            <h2 class="quest__title">Остались вопросы?</h2>
+            <strong class="quest__bold">Напишите нам</strong>
+          </div>
+          <form class="quest__form" action="https://echo.htmlacademy.ru/courses" method="POST">
+            <input class="quest__input" type="text" name="user_name" placeholder="Ваше имя" aria-label="Ваше имя" minlength="2" maxlength="60" required>
+            <input class="quest__input" type="email" name="user_email" placeholder="Email для обратной связи" aria-label="Email для обратной связи" required>
+            <textarea class="quest__area" name="user_opinion" placeholder="Опишите Ваш вопрос" minlength="2" maxlength="5000" aria-label="Опишите Ваш вопрос" required></textarea>
+            <button class="quest__btn" type="submit">Задать нам вопрос</button>
+          </form>
+        </div>
+      </div>
+      <div class="quest__bg"></div>
+    </section>
+    <!-- Section quest finished -->
   </main>
   <!-- Site main end -->
-
-<!-- Site footer begin -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__wrapper">
-      <a class="logo-footer" href="./index.html">
-        <img class="logo-footer__img" src="./images/vetlogo.svg"
-        width="178"
-        height="87"
-        alt="Vet clinic's logo">
-      </a>
-      <ul class="site-footer__list">
-        <li class="site-footer__item">
-          <a class="site-footer__link" href="./index.html">Главная</a>
-        </li>
-        <li class="site-footer__item">
-          <a class="site-footer__link" href="#">Полезные Статьи</a>
-        </li>
-        <li class="site-footer__item">
-          <a class="site-footer__link" href="#">О Клинике</a>
-        </li>
-      </ul>
-      <ul class="site-footer__list">
-        <li class="site-footer__item">
-          <a class="site-footer__link" href="#">FAQ</a>
-        </li>
-        <li class="site-footer__item">
-          <a class="site-footer__link" href="./services.html">Наши Услуги</a>
-        </li>
-        <li class="site-footer__item">
-          <a class="site-footer__link" href="#">Контакты</a>
-        </li>
-      </ul>
-        <address class="site-footer__address">
-        <div class="site-footer__shell workday">
-          <strong class="workday__bold workday__bold--decoration">
-            Пн - Пт 
-            <time class="workday__time" datetime="2023-06-04T08:00-06:00">8:00 - 18:00</time>
-          </strong>
-          <strong class="workday__bold">
-            Сб - Вс 
-            <time class="workday__time" datetime="2023-06-04T08:00+14:00">8:00 - 14:00</time>
-          </strong>
-        </div>
-        <a class="site-footer__link-address" href="https://yandex.com/maps/-/CCUwJ6s42B" target="_blank">г. Мариуполь, проспект Победы, 48а</a>
-        <ul class="site-footer__list-tel">
-          <li class="site-footer__item-tel">
-            <a class="site-footer__link-tel" href="tel:+70676347574">(067) 634 -75 - 74</a>
+  
+  <!-- Site footer begin -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__wrapper">
+        <a class="logo-footer" href="./index.html">
+          <img class="logo-footer__img" src="./images/vetlogo.svg"
+          width="178"
+          height="87"
+          alt="Vet clinic's logo">
+        </a>
+        <ul class="site-footer__list">
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="./index.html">Главная</a>
           </li>
-          <li class="site-footer__item-tel">
-            <a class="site-footer__link-tel" href="tel:+70637570131">(0637) 57 - 01 - 31</a>
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="#">Полезные Статьи</a>
           </li>
-          <li class="site-footer__item-tel">
-            <a class="site-footer__link-tel" href="tel:+70982664389">(098) 266 - 43 - 89</a>
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="#">О Клинике</a>
           </li>
         </ul>
-      </address>
+        <ul class="site-footer__list">
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="#">FAQ</a>
+          </li>
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="./services.html">Наши Услуги</a>
+          </li>
+          <li class="site-footer__item">
+            <a class="site-footer__link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <address class="site-footer__address">
+          <div class="site-footer__shell workday">
+            <strong class="workday__bold workday__bold--decoration">
+              Пн - Пт 
+              <time class="workday__time" datetime="2023-06-04T08:00-06:00">8:00 - 18:00</time>
+            </strong>
+            <strong class="workday__bold">
+              Сб - Вс 
+              <time class="workday__time" datetime="2023-06-04T08:00+14:00">8:00 - 14:00</time>
+            </strong>
+          </div>
+          <a class="site-footer__link-address" href="https://yandex.com/maps/-/CCUwJ6s42B" target="_blank">г. Мариуполь, проспект Победы, 48а</a>
+          <ul class="site-footer__list-tel">
+            <li class="site-footer__item-tel">
+              <a class="site-footer__link-tel" href="tel:+70676347574">(067) 634 -75 - 74</a>
+            </li>
+            <li class="site-footer__item-tel">
+              <a class="site-footer__link-tel" href="tel:+70637570131">(0637) 57 - 01 - 31</a>
+            </li>
+            <li class="site-footer__item-tel">
+              <a class="site-footer__link-tel" href="tel:+70982664389">(098) 266 - 43 - 89</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <p class="site-footer__copyright">
+        © 2020 example. All Rights Reserved.
+      </p>
     </div>
-    <p class="site-footer__copyright">
-      © 2020 example. All Rights Reserved.
-    </p>
-  </div>
-</footer>
-<!-- Site footer end -->
+  </footer>
+  <!-- Site footer end -->
 </body>
 </html>
