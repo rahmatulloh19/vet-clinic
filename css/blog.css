@@ -853,7 +853,6 @@ only screen and (                min-resolution: 2dppx) {
 
   .card__item::before {
     background-image: url("../images/blog/graycat@2x.png");
-    background-size: contain;
   }
 
   .card__item--dog::before {
