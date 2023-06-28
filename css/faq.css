@@ -425,7 +425,7 @@ img {
   opacity: 0.6;
 }
 
-.hero__more-decoration {
+.hero__more::before {
   display: block;
   width: 21px;
   height: 22px;
